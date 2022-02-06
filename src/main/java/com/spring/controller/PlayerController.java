@@ -68,10 +68,7 @@ public class PlayerController {
 	// http://localhost:8080/api/player?id=
 	@DeleteMapping("/player")
 	public String deletePlayer(@RequestParam int id) {
-		int status = playerService.deletePlayer(id);
-		if (status==0){
-			throw new RuntimeException("unfounded id : "+id);
-		}
+		playerService.deletePlayer(id);
 		return "Deleted Successfuly";
 	}
 

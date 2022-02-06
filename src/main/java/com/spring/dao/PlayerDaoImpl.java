@@ -12,8 +12,8 @@ import javax.persistence.EntityManager;
 
 
 @Repository
-public class PlayerDaoImpl implements PlayerDAO {
-
+public class PlayerDaoImpl{
+/*
 	private EntityManager entityManager ;
 	@Autowired
 	public PlayerDaoImpl(EntityManager entityManager) {
@@ -48,5 +48,5 @@ public class PlayerDaoImpl implements PlayerDAO {
 
 		return q.executeUpdate();
 	}
-	
+	*/
 }
